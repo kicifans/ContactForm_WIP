@@ -1,0 +1,10 @@
+Maris	Volejbols	volejbols@lat.lt	5334353	24.08.2020. 	true
+Juris	Karlis	tests2@tests.com	64434342	24.08.2020. 	true
+Tetris	Kongs	geimeris15@one.lv	68443332	24.08.2020. 	false
+Bruce	Wayne	batman01@co.co	33387454	24.08.2020. 	false
+Valdis	Smaidigais	valdis420@inbox.lv	65634283	25.08.2020. 	true
+Fdsf	Dfs	kaka@tests.lv	3434234324	25.08.2020. 	false
+Peteris	Otrais	otrais@peteris.lv	7676543536	25.08.2020. 	false
+Juris	Kalnis	dasdsa@dsadas.lt	4432423	25.08.2020. 	false
+Juris	Karklins	juris@karlins.tv	95848644	25.08.2020. 	true
+Name	Surname	email@email.com	555222666	25.08.2020. 	false

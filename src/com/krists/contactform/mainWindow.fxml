@@ -1,0 +1,79 @@
+
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:id="mainWindow" fx:controller="com.krists.contactform.Controller"
+            xmlns:fx="http://javafx.com/fxml" style="-fx-background-color:#CAF6E8 ">
+    <top >
+        <GridPane alignment="CENTER" hgap="10" vgap="10">
+            <Label fx:id="contactLabel" text="Contact List"
+                   GridPane.columnIndex="0" GridPane.rowIndex="2">
+            </Label>
+            <HBox GridPane.rowIndex="3" prefHeight="10"></HBox>
+        </GridPane>
+    </top>
+    <center>
+        <TableView fx:id="contactTable">
+            <columns>
+                <TableColumn text="Favorite" prefWidth="70">
+                    <cellValueFactory >
+                        <PropertyValueFactory property="favorite"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Name" prefWidth="110">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Last Name" prefWidth="110">
+                    <cellValueFactory >
+                        <PropertyValueFactory property="lastName"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="E-mail" prefWidth="130">
+                    <cellValueFactory >
+                        <PropertyValueFactory property="email"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Phone Number" prefWidth="110">
+                    <cellValueFactory >
+                        <PropertyValueFactory property="phoneNumber"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Date" prefWidth="100">
+                    <cellValueFactory >
+                        <PropertyValueFactory property="date"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+            </columns>
+        </TableView>
+    </center>
+
+    <left>
+        <VBox prefWidth="15">
+
+        </VBox>
+    </left>
+    <right>
+        <VBox prefWidth="15">
+
+        </VBox>
+    </right>
+
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="50" spacing="30.0">  <!--Buttons to add/delete contacts-->
+            <Button text="Add new Contact" onMouseClicked="#showContactForm"/>
+            <Button fx:id="favoriteButton" text="  View Favorites  " onMouseClicked="#showFavorites"/>
+            <Button fx:id="deleteButton" text="Delete Contact" onMouseClicked="#deleteContact"/>
+           <Button fx:id="editButton" text="Edit Contact" onMouseClicked="#editContact"/>
+        </HBox>
+    </bottom>
+</BorderPane>
