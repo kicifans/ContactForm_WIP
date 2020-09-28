@@ -1,5 +1,5 @@
 # ContactForm_WIP
-Work In Progres contact form
+Contact Form (Work in Progress)
 
 Contact form is made using Java, JavaFX(in-line and FXML), CSS.
 Contact form loads contacts from contacts.txt file. 
